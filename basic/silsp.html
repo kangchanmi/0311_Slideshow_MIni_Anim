@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Basic</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+
+        input, button {
+            font-size: 30px;
+        }
+
+        div:last-child {
+            width: 300px;
+            height: 100px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            border: 1px solid #000;
+            margin: 20px;
+        }
+
+    </style>
+
+    <script>
+        function sample1() {
+            alert("sample 함수 호출!");
+            /*세미콜론 ( ; ), 구분자(separator, delimiter 딜리미터)*/
+        }
+
+        function sample2() {
+            alert("sample 함수 호출!");
+            /*세미콜론 ( ; ), 구분자(separator, delimiter 딜리미터)*/
+        }
+
+    </script>
+
+    <script src="script/script.js"></script>
+
+</head>
+
+<body>
+    <h1>JS 기초</h1>
+    <div>
+        <input type="text" id="insData">
+        <button type="button" onclick="dataOut()">
+            입력내용출력
+        </button>
+    </div>
+
+    <div id="output">외부 자바스크립트</div>
+    <!--요소 = 시작태그 + 내용(= 텍스트) + 종료태그-->
