@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/*Reset 시작*/
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img                 { vertical-align: middle; }
+a                     { text-decoration: none; }
+a:link               { color: #333; }
+a:active            { color: #333; }
+a:visited           { color: #333; }
+a:hover            { color: #444; }
+ul                    { list-style: none; }
+/*Reset 끝*/
+
+/*가이드라인 시작*/
+/*div#wrap             { border: 1px solid #000; }*/
+/*header#header     { border: 1px solid #000; }*/
+/*main#main          { border: 1px solid #000; }*/
+aside#aside          { border: 1px solid #000; }
+footer#footer        { border: 1px solid #000; }
+
+/*가이드라인 끝*/
+
+/*공통영역 시작*/
+div#wrap {
+    width: 1000px;
+    padding: 4px;
+    margin: 0 auto;
+}
+#wrap>* {
+    font-size: 30px;
+    margin: 4px;
+}
+
+
+/*공통영역 끝*/
+
+/*헤더*/
+header#header {
+    padding: 3px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+}
+/*헤더*/
+
+
+/* 헤더 로고 */
+div#headerLogo {
+    width: 240px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #000;
+}
+/* 헤더 로고 */
+
+/* 헤더 GNB */
+nav#gnb {
+    width: 600px;
+/*    border: 1px solid #000;*/
+
+    position: relative;
+}
+#gnb>ul#mainMenu {
+/*    border: 1px solid #fb0;*/
+
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+}
+#gnb>ul#mainMenu>li {
+    border: 1px solid #08f;
+    font-size: 20px;
+    float: left;
+}
+#gnb>ul>li>a {
+    font-weight: bold;
+    background-color: #259aff;
+}
+#gnb a {
+    padding: 8px 16px;
+
+    display: inline-block;
+}
+#gnb .subMenu {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+#gnb .subMenu a:hover {
+/*    background-color: #fff;*/
+    opacity: 0.75;    /* opacity : 요소 자체에 적용되는 불투명 속성, 0~1 단위 */
+    /* rgba () => 색상에 적용되는 불투명 속성 */
+}
+/* 헤더 GNB */
+
+/*div#bgArea*/
+div#bgArea {
+    position: relative;
+    top: -8px;
+    z-index: 0;
+}
+    /*div#subMenuBG*/
+div#subMenuBG {
+    width: 100%;
+    height: 128px;
+    background-color: rgba(37, 154, 255, 0.6);
+
+    display: none;
+    position: absolute;
+}
+    /*div#subMenuBG*/
+/*div#bgArea*/
+
+
+/*main#main*/
+main#main {
+    height: 300px;
+/*    border: 4px solid #f00;*/
+    overflow: hidden;
+}
+/*main#main*/
+
